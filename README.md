@@ -18,10 +18,32 @@ Next, import the entry point hamburger SCSS  into your main SCSS file:
 @import "/path/to/bower_components/wealthsimple-hamburger/hamburger";
 ```
 
-Finally, include the `hamburger.js` file in your HTML:
+Then, include the `hamburger.js` file in your HTML:
 
 ```html
 <script src="/path/to/bower_components/wealthsimple-hamburger/hamburger.js"></script>
+```
+
+Finally, add the HTML for the hamburger menu:
+
+```html
+<a class="hamburger-icon" data-hamburger-action="open">
+  <div class="hamburger-icon-lines">
+    <div class="hamburger-icon-line"></div>
+    <div class="hamburger-icon-line"></div>
+    <div class="hamburger-icon-line"></div>
+  </div>
+</a>
+
+<div class="hamburger-menu">
+  <div class="hamburger-button-close" data-hamburger-action="close"></div>
+  <div class="hamburger-menu-items">
+    <a href="/">Home</a>
+    <a href="/features">Features</a>
+    <a href="/blog">Blog</a>
+    <a href="/signup">Sign up</a>
+  </div>
+</div>
 ```
 
 # Configuration
