@@ -15,7 +15,8 @@
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "README.md"
   ],
   "dependencies": {
     "wealthsimple-fabric": "git@github.com:wealthsimple/fabric.git"
