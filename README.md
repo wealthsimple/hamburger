@@ -1,2 +1,2 @@
 # hamburger
-CSS module for the hamburger (sidenav) menu
+Module for the Wealthsimple hamburger (side-nav) menu.

@@ -1,0 +1,70 @@
+// Default variables -- feel free to override
+$hamburger-menu-z-index: 10 !default;
+$hamburger-menu-width: 260px !default;
+$hamburger-button-close: '/assets/images/hamburger-button-close.svg' !default;
+
+.hamburger-menu {
+  color: $color-white;
+  transition: all 500ms ease;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: -$hamburger-menu-width;
+  background: $color-yellow;
+  z-index: $hamburger-menu-z-index;
+  width: $hamburger-menu-width;
+
+  &.show {
+    right: 0;
+  }
+}
+
+.hamburger-menu-overlay {
+  transition: all 500ms ease;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: -1;
+  background-color: rgba(0,0,0,0.5); /*dim the background*/
+
+  &.show {
+    opacity: 1;
+    z-index: $hamburger-menu-z-index - 1;
+  }
+}
+
+.hamburger-button-close {
+  background: url($hamburger-button-close);
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+
+.hamburger-menu-items {
+  @include vertical-align(absolute);
+  @include font-sans(14px);
+
+  @include medium {
+    @include font-sans-bold(15px);
+  }
+  width: 100%;
+  letter-spacing: 3px;
+  text-align: center;
+
+  a {
+    display: block;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: $color-white;
+
+    @include medium {
+      line-height: 60px;
+    }
+  }
+}
