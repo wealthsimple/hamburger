@@ -1,8 +1,3 @@
-// Default variables -- feel free to override
-$hamburger-menu-z-index: 10 !default;
-$hamburger-menu-width: 260px !default;
-$hamburger-button-close: '/assets/images/hamburger-button-close.svg' !default;
-
 .hamburger-menu {
   color: $color-white;
   transition: all 500ms ease;
