@@ -1,0 +1,32 @@
+.hamburger-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding-top: 13px;
+  background-color: $color-yellow;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-yellow-hover;
+  }
+
+  .hamburger-icon-line {
+    width: 15px;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto 4px;
+  }
+
+  @include medium {
+    width: 60px;
+    height: 60px;
+    padding-top: 22px;
+
+    .hamburger-icon-line {
+      width: 22px;
+      height: 2px;
+      margin-bottom: 5px;
+    }
+  }
+}

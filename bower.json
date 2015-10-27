@@ -7,7 +7,8 @@
   "description": "Module for the Wealthsimple hamburger (side-nav) menu.",
   "main": [
     "hamburger.js",
-    "hamburger.scss"
+    "hamburger-menu.scss",
+    "hamburger-icon.scss"
   ],
   "license": "MIT",
   "ignore": [
