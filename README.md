@@ -16,6 +16,6 @@ Use bower to install it into your project:
 
 There are several SCSS variables exposed for possible customization:
 
-- `$hamburger-menu-z-index`: The z-index for the hamburger menu. Usually you'll want to set this higher than all other z-indexes.
+- `$hamburger-menu-z-index`: The z-index for the expanded menu. You'll want to set this higher than all other z-indexes.
 - `$hamburger-menu-width`: The width of the hamburger menu when expanded.
-- `$hamburger-button-close`: The path or absolute URL to the close SVG icon (included in this module)
+- `$hamburger-button-close`: The path or absolute URL to `hamburger-button-close.svg` (include).
