@@ -1,8 +1,7 @@
 .hamburger-icon {
   display: block;
-  width: 40px;
-  height: 40px;
-  padding-top: 13px;
+  width: $hamburger-button-open-width-small;
+  height: $hamburger-button-open-width-small;
   background-color: $color-yellow;
   border-radius: 50%;
   cursor: pointer;
@@ -11,22 +10,32 @@
     background-color: $color-yellow-hover;
   }
 
+  .hamburger-icon-lines {
+    @include center-align(absolute);
+    width: 100%;
+  }
+
   .hamburger-icon-line {
-    width: 15px;
+    width: 38%;
     height: 2px;
     background-color: white;
     margin: 0 auto 4px;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   @include medium {
-    width: 60px;
-    height: 60px;
-    padding-top: 22px;
+    width: $hamburger-button-open-width-medium;
+    height: $hamburger-button-open-width-medium;
 
     .hamburger-icon-line {
-      width: 22px;
-      height: 2px;
       margin-bottom: 5px;
     }
+  }
+
+  @include large {
+    width: $hamburger-button-open-width-large;
+    height: $hamburger-button-open-width-large;
   }
 }

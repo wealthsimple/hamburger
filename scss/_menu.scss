@@ -52,7 +52,7 @@
 }
 
 .hamburger-menu-items {
-  @include vertical-align(absolute);
+  @include vertical-center-align(absolute);
   @include font-sans(14px);
   width: 100%;
   letter-spacing: 3px;
