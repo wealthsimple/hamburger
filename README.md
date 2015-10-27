@@ -11,7 +11,7 @@ Dependencies:
 Use bower to install it into your project:
 
     bower install --save git@github.com:wealthsimple/hamburger.git
-    
+
 Next, import the entry point hamburger SCSS  into your main SCSS file:
 
 ```scss
@@ -29,5 +29,9 @@ Finally, include the `hamburger.js` file in your HTML:
 There are several SCSS variables exposed for possible customization:
 
 - `$hamburger-menu-z-index`: The z-index for the expanded menu. You'll want to set this higher than all other z-indexes.
-- `$hamburger-menu-width`: The width of the hamburger menu when expanded.
 - `$hamburger-button-close`: The path or absolute URL to `hamburger-button-close.svg` (included).
+- `$hamburger-menu-width-small`: The width of the hamburger menu when expanded (small screens).
+- `$hamburger-menu-width-medium`: The width of the hamburger menu when expanded (medium screens).
+- `$hamburger-menu-width-large`: The width of the hamburger menu when expanded (large screens).
+
+Note that widths can be in `px`, `%`, or other measures.

@@ -4,13 +4,23 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  right: -$hamburger-menu-width;
+  right: -$hamburger-menu-width-small;
   background: $color-yellow;
   z-index: $hamburger-menu-z-index;
-  width: $hamburger-menu-width;
+  width: $hamburger-menu-width-small;
 
   &.show {
     right: 0;
+  }
+
+  @include medium {
+    right: -$hamburger-menu-width-medium;
+    width: $hamburger-menu-width-medium;
+  }
+
+  @include large {
+    right: -$hamburger-menu-width-large;
+    width: $hamburger-menu-width-large;
   }
 }
 
