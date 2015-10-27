@@ -28,7 +28,7 @@ $hamburger-button-close: '/assets/images/hamburger-button-close.svg' !default;
   height: 100%;
   opacity: 0;
   z-index: -1;
-  background-color: rgba(0,0,0,0.5); /*dim the background*/
+  background-color: rgba(0, 0, 0, 0.5); // dim the background
 
   &.show {
     opacity: 1;
@@ -49,22 +49,22 @@ $hamburger-button-close: '/assets/images/hamburger-button-close.svg' !default;
 .hamburger-menu-items {
   @include vertical-align(absolute);
   @include font-sans(14px);
-
-  @include medium {
-    @include font-sans-bold(15px);
-  }
   width: 100%;
   letter-spacing: 3px;
   text-align: center;
 
-  a {
-    display: block;
-    line-height: 70px;
-    text-transform: uppercase;
-    color: $color-white;
+  @include medium {
+    @include font-sans-bold(15px);
+  }
+}
 
-    @include medium {
-      line-height: 60px;
-    }
+.hamburger-menu-items a {
+  display: block;
+  line-height: 70px;
+  text-transform: uppercase;
+  color: $color-white;
+
+  @include medium {
+    line-height: 60px;
   }
 }
