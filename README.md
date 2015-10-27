@@ -18,4 +18,4 @@ There are several SCSS variables exposed for possible customization:
 
 - `$hamburger-menu-z-index`: The z-index for the expanded menu. You'll want to set this higher than all other z-indexes.
 - `$hamburger-menu-width`: The width of the hamburger menu when expanded.
-- `$hamburger-button-close`: The path or absolute URL to `hamburger-button-close.svg` (include).
+- `$hamburger-button-close`: The path or absolute URL to `hamburger-button-close.svg` (included).
