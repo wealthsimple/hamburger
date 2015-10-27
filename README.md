@@ -11,6 +11,18 @@ Dependencies:
 Use bower to install it into your project:
 
     bower install --save git@github.com:wealthsimple/hamburger.git
+    
+Next, import the entry point hamburger SCSS  into your main SCSS file:
+
+```scss
+@import "/path/to/bower_components/wealthsimple-hamburger/hamburger";
+```
+
+Finally, include the `hamburger.js` file in your HTML:
+
+```html
+<script src="/path/to/bower_components/wealthsimple-hamburger/hamburger.js"></script>
+```
 
 # Configuration
 
