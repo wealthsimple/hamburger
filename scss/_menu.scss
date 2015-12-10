@@ -53,13 +53,15 @@
 
 .hamburger-menu-items {
   @include vertical-center-align(absolute);
-  @include font-sans(14px);
+  @include font-sans;
+  font-size: 14px;
   width: 100%;
   letter-spacing: 3px;
   text-align: center;
 
   @include medium {
-    @include font-sans-bold(15px);
+    font-size: 15px;
+    @include font-sans-bold;
   }
 }
 
