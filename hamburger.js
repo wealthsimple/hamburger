@@ -1,13 +1,13 @@
 (function() {
-  var $menu, $overlay;
+  var $overlay;
 
   function open() {
-    $menu.addClass('show');
+    $('.hamburger-menu').addClass('show');
     $overlay.addClass('show');
   }
 
   function close() {
-    $menu.removeClass('show');
+    $('.hamburger-menu').removeClass('show');
     $overlay.removeClass('show');
   }
 
@@ -19,7 +19,6 @@
   }
 
   function init() {
-    $menu = $('.hamburger-menu');
     $overlay = appendOverlay();
 
     // Add event listeners
