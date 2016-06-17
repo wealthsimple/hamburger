@@ -20,6 +20,6 @@
     "README.md"
   ],
   "dependencies": {
-    "wealthsimple-fabric": "git@github.com:wealthsimple/fabric.git"
+    "ws-fabric": "2.0.0"
   }
 }
