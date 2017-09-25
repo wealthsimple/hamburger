@@ -1,0 +1,23 @@
+{
+  "name": "wealthsimple-hamburger",
+  "version": "1.0.1",
+  "homepage": "https://github.com/wealthsimple/hamburger",
+  "authors": [
+    "Peter Graham <peter@wealthsimple.com>"
+  ],
+  "description": "Module for the Wealthsimple hamburger (side-nav) menu.",
+  "main": "hamburger.js",
+  "scss": "hamburger.scss",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "wealthsimple-fabric": "^3.0.0"
+  }
+}
